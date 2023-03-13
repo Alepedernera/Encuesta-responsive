@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0, user-scalable=no" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+     rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,400;0,900;1,
+700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="header-container">
+        <header class="header">
+            <h1 class="form-title">Formulario de encuesta para gimnasio</h1>
+            <p class="form-subtitle">Gracias por tomarse su tiempo para ayudarnos a mejorar.</p>
+        </header>
+    </main>
+        <form action="#">
+            <div class="user-box">
+                <div class="user-input-box">
+                    <label for="name">Nombre</label>
+                    <input type="text" 
+                        id="name" 
+                        placeholder="Ingrese su nombre" 
+                        required>
+                </div>
+                <div class="user-input-box">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" 
+                        id="lastname" 
+                        placeholder="Ingrese su apellido" 
+                        required>
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="email" 
+                        id="email" 
+                        placeholder="Ingrese su email" 
+                        required>
+                </div>
+                <div class="user-input-box">
+                    <label for="age">Edad</label>
+                    <input type="number" 
+                        min="1" 
+                        max="120" 
+                        id="age" 
+                        placeholder="Ingrese su edad" 
+                        required>
+                </div>
+                <div class="gender-category">
+                    <span class="gender-title">Género</span> <br>
+                    <div class="gender">    
+                        <label>
+                            <input type="radio" name="genero" value="hombre">
+                            Hombre
+                          </label>
+                          <label>
+                            <input type="radio" name="genero" value="mujer">
+                            Mujer
+                          </label>
+                          <label>
+                            <input type="radio" name="genero" value="otro">
+                            Otro
+                          </label>  
+                    </div>
+                </div>
+                <div class="user-info">
+                    <label for="multioption" class="user-work">Actualmente se dedica a: </label>
+                        <select id="multioption" class="select1" required>
+                            <option disabled selected>Elija una opción</option>
+                            <option>Estudiante</option>
+                            <option>Trabajador</option>
+                            <option>Desocupado</option>
+                            <option>Prefiero no decirlo</option>
+                            <option>Otro</option>
+                        </select>
+                    <div class="user-days">
+                        <label>¿Cuántos días a la semana entrena?</label>
+                        <input type="number" min="1" max="7" id="user-days" required>
+                    </div>
+                    <div class="user-hour">
+                        <label for="multioption">¿Cuántas horas diarias entrena? </label>
+                        <select id="multioption" class="select2" required>
+                            <option disabled selected>Elija una opción</option>
+                            <option>1/2 hora</option>
+                            <option>1 hora</option>
+                            <option>1 hora y media</option>
+                            <option>2 horas o más</option>
+                        </select>
+                    </div>
+                    <div class="user-choice">
+                        <label for="check">¿Qué actividad realiza?</label>
+                        <div class="user-check-box">
+                            <input type="checkbox" 
+                                id="check"
+                                value="aerobica" 
+                                required>Aeróbica <br>
+                        </div>
+                        <div class="user-check-box">
+                            <input type="checkbox" 
+                                id="check"
+                                value="aparatos/musculacion" 
+                                required>Aparatos/Musculación <br>
+                        </div>
+                        <div class="user-check-box">
+                            <input type="checkbox" 
+                                id="check"
+                                value="crossfit" 
+                                required>Crossfit <br>
+                        </div>
+                        <div class="user-check-box">
+                            <input type="checkbox" 
+                                id="check"
+                                value="artes marciales" 
+                                required>Artes Marciales <br>
+                        </div>
+                        <div class="user-check-box">
+                            <input type="checkbox" 
+                                id="check"
+                                value="spinning" 
+                                required>Spinning <br>
+                        </div>
+                        <div class="user-check-box">
+                            <input type="checkbox" 
+                                id="check"
+                                value="otra" 
+                                required>Otra <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-comments">
+                    <p>¿Algún comentario o sugerencia? Déjelo aquí abajo:</p>
+                    <textarea id="comments" 
+                              class="input-textarea" 
+                              name="comment"
+                              rows="5"
+                              cols="50"
+                              maxlength="150"
+                              placeholder="Escriba aquí su comentario o sugerencia..."></textarea>
+                </div>
+                <div class="user-submit">
+                    <button type="submit"
+                            id="submit"
+                            class="submit-button">Enviar</button>
+                </div>
+            </div>    
+        </form>
+    <footer class="footer">
+        <div class="container-foot">
+            <h2>Hecho por @pedernera_ale</h2>
+        </div>
+        <div class="copyright-foot">
+            <h2>Copyright @pedernera_ale 2023</h2>
+        </div>
+    </footer>
+</body>
+</html>
