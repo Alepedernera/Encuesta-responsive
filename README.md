@@ -1,5 +1,6 @@
 # Encuesta-responsive
 Encuesta para gimnasio adaptable a todo tipo de panallas
+
 Hola gente! bueno, recién voy comenzando con la programación y para ir pracicando cree ese formulario para un gimnasio
 que es adapable a todo tipo de pantalla basándome en lo aprendido y viendo algunos videos como guía.
 
